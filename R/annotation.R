@@ -28,6 +28,7 @@ NULL
 #' anno
 #' @author Volker Hovestadt \email{conumee@@hovestadt.bio}
 #' @export
+#' 
 CNV.create_anno <- function(Mset,bin_minprobes = 15, bin_minsize = 50000, bin_maxsize = 5e+06
     , chrXY = FALSE, exclude_regions = NULL, detail_regions = NULL) {
     object <- new("CNV.anno")
