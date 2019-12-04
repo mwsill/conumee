@@ -41,7 +41,7 @@ CNV.create_anno <- function(Mset,bin_minprobes = 15, bin_minsize = 50000, bin_ma
         a2[[an]] else a1[[an]], simplify = FALSE))
     
     if (chrXY) {
-        object@genome <- data.frame(chr = paste("chr", c(1:22, "XY"), # only y 
+        object@genome <- data.frame(chr = paste("chr", c(1:22, "X","Y"), # only y 
             sep = ""), stringsAsFactors = FALSE)
     } else {
         object@genome <- data.frame(chr = paste("chr", 1:22, sep = ""), 
